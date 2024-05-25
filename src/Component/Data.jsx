@@ -154,7 +154,7 @@ function Data() {
                         </div>
                       <div className="flex">
                             <h1>Graphql</h1>
-                            <h1 className="ml-12">----</h1>
+                            <h1 className="ml-13">----</h1>
                         </div>
                         <div className="flex">
                             <h1>Next.js</h1>
