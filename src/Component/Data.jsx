@@ -41,6 +41,9 @@ function Data() {
             <a href="https://github.com/umeshola/404_DSA">
               <h1 className="hover:text-green-500">DSA cracker</h1>
             </a>
+            <a href="https://github.com/umeshola/ONE">
+              <h1 className="hover:text-green-500">ONE</h1>
+            </a>
             <a href="https://github.com/umeshola/Paper_Trading">
               <h1 className="hover:text-green-500">Paper Trading app</h1>
             </a>
@@ -147,6 +150,10 @@ function Data() {
                         <h1 className="ml-24">Exprence</h1>
                         <div className="flex">
                             <h1>React.js</h1>
+                            <h1 className="ml-12">----</h1>
+                        </div>
+                      <div className="flex">
+                            <h1>Graphql</h1>
                             <h1 className="ml-12">----</h1>
                         </div>
                         <div className="flex">
