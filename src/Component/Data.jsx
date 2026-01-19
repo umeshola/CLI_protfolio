@@ -2,7 +2,10 @@ import { useEffect, useState, useRef } from "react";
 
 function Data() {
   const [inputText, setInputText] = useState("");
-  const [commandHistory, setCommandHistory] = useState([]);
+  const [commandHistory, setCommandHistory] = useState([
+    "Type 'help' to see all available commands.",
+    "Try typing: dir, cd Projects, or cd Skills",
+  ]);
   const containerRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -194,13 +197,14 @@ function Data() {
                 return <div>Changing directory...</div>;
             case "help":
                 return (
-                    <div>
-                        <h1>{`C:\\\\Working command>`}</h1>
-                        <h1> dir</h1>
-                        <h1> cd</h1>
-                        <h1> help</h1>
-                        <h1> clear</h1>
-                    </div>
+                    <div className="text-green-400">
+                      <h1 className="font-bold underline">Available Commands:</h1>
+                      <p><strong>dir</strong> - List all main categories</p>
+                      <p><strong>cd [Category]</strong> - View details (e.g., cd Projects, cd Skills)</p>
+                      <p><strong>clear</strong> - Clean the terminal screen</p>
+                      <p><strong>help</strong> - Show this manual</p>
+                      <p><strong>exit</strong> - Reset the terminal</p>
+                  </div>
                 );
             case "clear":
                 setCommandHistory([]);
